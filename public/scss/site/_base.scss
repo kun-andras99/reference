@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Artegra Soft';
+    src: local('Artegra Soft Black'), local('ArtegraSoft-Black'),
+        url('../../assets/fonts/ArtegraSoft-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Soft';
+    src: local('Artegra Soft ExtraBold'), local('ArtegraSoft-ExtraBold'),
+        url('../../assets/fonts/ArtegraSoft-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Soft';
+    src: local('Artegra Soft'), local('ArtegraSoft-Regular'),
+        url('../../assets/fonts/ArtegraSoft-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Soft';
+    src: local('Artegra Soft Thin'), local('ArtegraSoft-Thin'),
+        url('../../assets/fonts/ArtegraSoft-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Soft';
+    src: local('Artegra Soft SemiBold'), local('ArtegraSoft-SemiBold'),
+        url('../../assets/fonts/ArtegraSoft-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Soft';
+    src: local('Artegra Soft Bold'), local('ArtegraSoft-Bold'),
+        url('../../assets/fonts/ArtegraSoft-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Soft';
+    src: local('Artegra Soft Light'), local('ArtegraSoft-Light'),
+        url('../../assets/fonts/ArtegraSoft-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Soft';
+    src: local('Artegra Soft Medium'), local('ArtegraSoft-Medium'),
+        url('../../assets/fonts/ArtegraSoft-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Artegra Soft';
+    src: local('Artegra Soft ExtraLight'), local('ArtegraSoft-ExtraLight'),
+        url('../../assets/fonts/ArtegraSoft-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: calc(100% - 16px);
+    background-color: var(--site-bg);
+    font-family: 'Artegra Soft', sans-serif;
+    font-weight: 500;
+    font-size: .900rem;
+    color: #fff;
+}
+
+body.dark-mode {
+    .toggle-mode {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        bottom: 25px;
+        right: 43px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: var(--dark-31);
+    }
+}
+
+body.light-mode {
+    .toggle-mode {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        bottom: 25px;
+        right: 43px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: var(--dark-31);
+    }
+}
+
+p {
+    padding-inline-start: 4px;
+    padding-inline-end: 4px;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    line-height: 1.8;
+}
+
+h1 {
+    padding-inline-start: 0px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+ul {
+    list-style-type: none;
+}
+ul, li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
