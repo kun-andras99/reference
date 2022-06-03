@@ -257,6 +257,10 @@ main {
   }
 }
 
+.mobile-menu-fix {
+  display: none;
+}
+
 @media (max-width: 1130px) {
   .mobile-menu-fix {
     position: fixed;

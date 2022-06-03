@@ -21,66 +21,70 @@ function MobileMenuContainer() {
                 <MenuItem icon="home" alt="home-icon" title="home-icon">
                     <MenuContainer cls="home">
                         <MenuLink url="/" hide={hide}>Kezdőlap</MenuLink>
-                        <MenuLink url="/" hide={hide}>Szabályok</MenuLink>
-                        <MenuLink url="/" hide={hide}>Útmutató</MenuLink>
-                        <MenuLink url="/" hide={hide}>Kapcsolat</MenuLink>
-                        <MenuLink url="/" hide={hide}>Oldaltérkép</MenuLink>
+                        <MenuLink url="/rules" hide={hide}>Szabályok</MenuLink>
+                        <MenuLink url="/guide" hide={hide}>Útmutató</MenuLink>
+                        <MenuLink url="/contact" hide={hide}>Kapcsolat</MenuLink>
+                        <MenuLink url="/sitemap" hide={hide}>Oldaltérkép</MenuLink>
                     </MenuContainer>
                 </MenuItem>
                 <MenuItem icon="mission" alt="mission-icon" title="mission-icon">
                     <MenuContainer cls="mission">
-                        <MenuLink url="/" hide={hide}>Akadémia</MenuLink>
-                        <MenuLink url="/" hide={hide}>Edzés</MenuLink>
-                        <MenuLink url="/" hide={hide}>Aréna</MenuLink>
-                        <MenuLink url="/" hide={hide}>NPC harc</MenuLink>
-                        <MenuLink url="/" hide={hide}>PVP harc</MenuLink>
-                        <MenuLink url="/" hide={hide}>Elem tanulása</MenuLink>
-                        <MenuLink url="/" hide={hide}>Kage torony</MenuLink>
+                        <MenuLink url="/academy" hide={hide}>Akadémia</MenuLink>
+                        <MenuLink url="/training" hide={hide}>Edzés</MenuLink>
+                        <MenuLink url="/arena" hide={hide}>Aréna</MenuLink>
+                        <MenuLink url="/npc-fight" hide={hide}>NPC harc</MenuLink>
+                        <MenuLink url="/pvp-fight" hide={hide}>PVP harc</MenuLink>
+                        <MenuLink url="/chakra-nature" hide={hide}>Elem tanulása</MenuLink>
+                        <MenuLink url="/kage-tower" hide={hide}>Kage torony</MenuLink>
                     </MenuContainer>
                 </MenuItem>
                 <MenuItem icon="hokage" alt="hokage-icon" title="hokage-icon">
                     <MenuContainer cls="hokage">
-                        <MenuLink url="/" hide={hide}>Küldetések</MenuLink>
-                        <MenuLink url="/" hide={hide}>Munkák</MenuLink>
-                        <MenuLink url="/" hide={hide}>Speciális küldetések</MenuLink>
-                        <MenuLink url="/" hide={hide}>Fejvadászatok</MenuLink>
-                        <MenuLink url="/" hide={hide}>Kitüntetések</MenuLink>
+                        <MenuLink url="/missions" hide={hide}>Küldetések</MenuLink>
+                        <MenuLink url="/works" hide={hide}>Munkák</MenuLink>
+                        <MenuLink url="/special-missions" hide={hide}>Speciális küldetések</MenuLink>
+                        <MenuLink url="/headhunter" hide={hide}>Fejvadászatok</MenuLink>
+                        <MenuLink url="/awards" hide={hide}>Kitüntetések</MenuLink>
                     </MenuContainer>
                 </MenuItem>
                 <MenuItem icon="city" alt="city-icon" title="city-icon">
                     <MenuContainer cls="city">
-                        <MenuLink url="/" hide={hide}>Küldetések</MenuLink>
-                        <MenuLink url="/" hide={hide}>Munkák</MenuLink>
-                        <MenuLink url="/" hide={hide}>Speciális küldetések</MenuLink>
-                        <MenuLink url="/" hide={hide}>Fejvadászatok</MenuLink>
-                        <MenuLink url="/" hide={hide}>Kitüntetések</MenuLink>
+                        <MenuLink url="/ranks" hide={hide}>Rangok</MenuLink>
+                        <MenuLink url="/blacksmith" hide={hide}>Kovácsműhely</MenuLink>
+                        <MenuLink url="/pet-shop" hide={hide}>Kisállat kereskedés</MenuLink>
+                        <MenuLink url="/dns-trading" hide={hide}>DNS kereskedés</MenuLink>
+                        <MenuLink url="/bijuu" hide={hide}>Bijuuk</MenuLink>
+                        <MenuLink url="/gambling" hide={hide}>Szerencsejáték</MenuLink>
+                        <MenuLink url="/bank" hide={hide}>Bank</MenuLink>
                     </MenuContainer>
                 </MenuItem>
                 <MenuItem icon="jutsu" alt="jutsu-icon" title="jutsu-icon">
                     <MenuContainer cls="jutsu">
-                        <MenuLink url="/" hide={hide}>Elsődleges elemi technikák</MenuLink>
-                        <MenuLink url="/" hide={hide}>Másodlagos elemi technikák</MenuLink>
-                        <MenuLink url="/" hide={hide}>Harmadlagos elemi technikák</MenuLink>
-                        <MenuLink url="/" hide={hide}>Egyéb technikák</MenuLink>
-                        <MenuLink url="/" hide={hide}>Kekkei Genkai</MenuLink>
-                        <MenuLink url="/" hide={hide}>Vérvonal képességek</MenuLink>
+                        <MenuLink url="/primary-elementary-techniques" hide={hide}>Elsődleges elemi technikák</MenuLink>
+                        <MenuLink url="/secondary-elementary-techniques" hide={hide}>Másodlagos elemi technikák</MenuLink>
+                        <MenuLink url="/tertiery-elementary-techniques" hide={hide}>Harmadlagos elemi technikák</MenuLink>
+                        <MenuLink url="/other-techniques" hide={hide}>Egyéb technikák</MenuLink>
+                        <MenuLink url="/kekkei-genkai" hide={hide}>Kekkei Genkai</MenuLink>
+                        <MenuLink url="/bloodline-techniques" hide={hide}>Vérvonal technikák</MenuLink>
+                        <MenuLink url="/unique-techniques" hide={hide}>Egyedi technikák</MenuLink>
                     </MenuContainer>
                 </MenuItem>
                 <MenuItem icon="weapon" alt="weapon-icon" title="weapon-icon">
                     <MenuContainer cls="weapon">
-                        <MenuLink url="/" hide={hide}>Fegyverek</MenuLink>
-                        <MenuLink url="/" hide={hide}>Bábok</MenuLink>
-                        <MenuLink url="/" hide={hide}>Egyedi felszerelések</MenuLink>
-                        <MenuLink url="/" hide={hide}>A Köd Hét Kardja</MenuLink>
-                        <MenuLink url="/" hide={hide}>Legendás felszerelések</MenuLink>
+                        <MenuLink url="/melee-equipments" hide={hide}>Közelharci felszerelések</MenuLink>
+                        <MenuLink url="/remote-equipments" hide={hide}>Távolharci felszerelések</MenuLink>
+                        <MenuLink url="/unique-equipments" hide={hide}>Egyedi felszerelések</MenuLink>
+                        <MenuLink url="/puppets" hide={hide}>Bábok</MenuLink>
+                        <MenuLink url="/seven-swords" hide={hide}>A Köd Hét Kardja</MenuLink>
+                        <MenuLink url="/legendary-weapons" hide={hide}>Legendás felszerelések</MenuLink>
                     </MenuContainer>
                 </MenuItem>
                 <MenuItem icon="ranklist" alt="ranklist-icon" title="ranklist-icon">
                     <MenuContainer cls="ranklist">
-                        <MenuLink url="/" hide={hide}>Karakterek</MenuLink>
-                        <MenuLink url="/" hide={hide}>Lakhelyek</MenuLink>
-                        <MenuLink url="/" hide={hide}>Csapatok</MenuLink>
-                        <MenuLink url="/" hide={hide}>Klánok</MenuLink>
+                        <MenuLink url="/all-character" hide={hide}>Karakterek</MenuLink>
+                        <MenuLink url="/all-village" hide={hide}>Lakhelyek</MenuLink>
+                        <MenuLink url="/all-team" hide={hide}>Csapatok</MenuLink>
+                        <MenuLink url="/all-clan" hide={hide}>Klánok</MenuLink>
                     </MenuContainer>
                 </MenuItem>
             </MenuSlide>
