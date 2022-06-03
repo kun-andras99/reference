@@ -1,5 +1,181 @@
 .mobile-menu-fix {
-    display: none;
+    position: fixed;
+    bottom: 50%;
+    right: 50%;
+    transform: translateX(calc(-50% + 530px)) translateY(calc(-50% - 169px));
+
+    .mobile-menu {
+        position: relative;
+        
+        li {
+            position: relative;
+        }
+
+        .mobile-menu-items {
+            position: absolute;
+            right: 1px;
+            width: 46px;
+            height: auto;
+            display: grid;
+            place-content: center;
+            grid-row-gap: 10px;
+            background-color: var(--shadow-0c9);
+            border-radius: 23px 23px 23px 23px;
+            padding: 6px 5px 6px 5px;
+
+            .mobile-menu-item {
+                display: block;
+                width: 38px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--dark-29);
+                box-shadow: 0 0 3px 1px var(--dark-0c);
+                border-radius: 50px;
+                visibility: visible;
+                transition: .15s all ease-in-out;
+
+                ul {
+                    cursor: default;
+                    position: absolute;
+                    right: 80px;
+                    top: 0;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: transform 0.45s;
+                    transform: translateX(-80px);
+
+                    > li {
+                        .mm {
+                            font-family: 'Artegra Soft', sans-serif;
+                            font-weight: 700;
+                            width: calc(100% - 17px);
+                            background-color: var(--dark-35);
+                            border-radius: 6px;
+                            font-weight: 600;
+                            font-size: 0.815rem;
+                            box-shadow: 0 0 3px 2px var(--shadow-0d);
+                            display: grid;
+
+                            a {
+                                display: block;
+                                letter-spacing: 0.5px;
+                                padding: 9px 0 7px 7px;
+                                color: var(--main-color);
+                                text-shadow: 0 0 2px var(--dark-0c), 0 0 2px var(--dark-0c);
+                                text-decoration: none;
+
+                                &:hover {
+                                    background-color: var(--shadow-0c9);
+                                }
+                            }
+
+                            a:first-child {
+                                border-radius: 5px 5px 0 0;
+                            }
+
+                            a:last-child {
+                                border-radius: 0 0 5px 5px;
+                            }
+                        }
+                        :last-child() {
+                            transform: translateY(-109px);
+                        }
+                    }
+                }
+
+                &:hover > .mission-menu-container,
+                .mission-menu-container {
+                    position: absolute;
+                }
+
+                &:hover > .hokage-menu-container,
+                .hokage-menu-container {
+                    position: absolute;
+                    min-width: 230px;
+                }
+
+                &:hover > .city-menu-container,
+                .city-menu-container {
+                    position: absolute;
+                    min-width: 200px;
+                }
+
+                &:hover > .jutsu-menu-container,
+                .jutsu-menu-container {
+                    position: absolute;
+                    min-width: 230px;
+                }
+
+                &:hover > .weapon-menu-container,
+                .weapon-menu-container {
+                    position: absolute;
+                    min-width: 200px;
+                }
+
+                &:hover > .ranklist-menu-container,
+                .ranklist-menu-container {
+                    position: absolute;
+                }
+    
+                &:hover > ul {
+                    right: 38px;
+                    visibility: visible;
+                    background-color: transparent;
+                    opacity: 1;
+                    width: auto;
+                    min-width: 170px;
+                    height: auto;
+                    transform: translateX(0px);
+
+                }
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    transform: translateX(0px);
+                    transition: .15s all ease-in-out;
+                }
+    
+                &:hover {
+                    filter: var(--filter-b2);
+                    cursor: pointer;
+    
+                    &::before {
+                        content: '';
+                        cursor: default;
+                        position: absolute;
+                        z-index: 1;
+                        top: 18px;
+                        width: 5px;
+                        height: 5px;
+                        background-color: var(--primary-blue);
+                        transform: translateX(-29px);
+                        border-radius: 5px;
+                        transition: .15s all ease-in-out;
+                    }
+                }
+    
+                .mobile-menu-icon {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    filter: var(--filter-b1);
+                    visibility: visible;
+                    transition: .15s all ease-in-out;
+                }
+            }
+        }
+    
+        .hamburger-button-container {
+            display: none;
+        } 
+    
+        .hamburger-button-container-close {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 1130px) {
@@ -7,6 +183,7 @@
         position: fixed;
         bottom: 78px;
         right: 35px;
+        transform: none;
     
         .mobile-menu {
             position: relative;
@@ -28,8 +205,10 @@
                 bottom: 0px;
                 transition: bottom .85s ease;
                 visibility: hidden;
-    
-                
+
+                .mobile-menu-item {
+                    display: none;
+                }
             }
     
         
@@ -192,6 +371,7 @@
             }
         
             .hamburger-button-container {
+                display: block;
                 position: absolute;
                 bottom: 0;
                 right: 0;
@@ -229,6 +409,7 @@
             } 
         
             .hamburger-button-container-close {
+                display: block;
                 cursor: pointer;
         
                 .line1 {

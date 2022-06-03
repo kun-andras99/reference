@@ -93,8 +93,9 @@ body.dark-mode {
         align-items: center;
         justify-content: center;
         font-weight: 800;
-        bottom: 25px;
-        right: 43px;
+        bottom: 50%;
+        right: 50%;
+        transform: translateX(calc(-50% + 537px))  translateY(calc(-50% + 235px));
         width: 32px;
         height: 32px;
         border-radius: 50%;
@@ -109,9 +110,9 @@ body.light-mode {
         align-items: center;
         justify-content: center;
         font-weight: 800;
-        bottom: 25px;
-        right: 43px;
-        width: 32px;
+        bottom: 50%;
+        right: 50%;
+        transform: translateX(calc(-50% + 537px))  translateY(calc(-50% + 238px)); // 21px
         height: 32px;
         border-radius: 50%;
         background-color: var(--dark-31);
@@ -146,4 +147,43 @@ ul, li {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+@media (max-width: 1130px) {
+    body {
+        font-size: .900rem;
+    }
+    body.dark-mode {
+        .toggle-mode {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            bottom: 25px;
+            right: 43px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--dark-31);
+            transform: none;
+        }
+    }
+    
+    body.light-mode {
+        .toggle-mode {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            bottom: 25px;
+            right: 43px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--dark-31);
+            transform: none;
+        }
+    }
 }
