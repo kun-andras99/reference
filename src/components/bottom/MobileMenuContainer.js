@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from "react";
 import Line from "../access/Line";
-import Text from "../access/Text";
 import MenuContainer from "./mobil-menu/MenuContainer";
 import MobileButton from "./mobil-menu/MobileButton";
 import MenuLink from "./mobil-menu/MenuLink";
