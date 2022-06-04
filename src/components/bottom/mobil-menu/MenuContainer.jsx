@@ -26,7 +26,6 @@ class MenuContainer extends Component {
     cityR() {
         let height = document.getElementById("city-menu-container");
         let half = (height.offsetHeight / 2) - 21;
-        console.log(half);
         let container = document.getElementById("city-menu-container");
         container.style.marginTop = -half+"px";
     }
@@ -47,12 +46,19 @@ class MenuContainer extends Component {
 
     ranklistR() {
         let height = document.getElementById("ranklist-menu-container");
-        let half = (height.offsetHeight / 2) + 21;
+        let half = (height.offsetHeight / 2) + 22;
         let container = document.getElementById("ranklist-menu-container");
         container.style.marginTop = -half+"px";
     }
 
     componentDidMount() {
+        this.homeR()
+        this.missionR()
+        this.hokageR()
+        this.cityR()
+        this.jutsuR()
+        this.weaponR()
+        this.ranklistR()
     }
 
     componentDidUpdate() {
