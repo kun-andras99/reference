@@ -8,6 +8,7 @@ import Sitemap from "./pages/home/Sitemap";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import ForgotPassword from "./pages/auth/ForgotPassword";
+import CharacterProfile from "./components/profile/CharacterProfile";
 
 function AppRoutes() {
   return (
@@ -21,6 +22,8 @@ function AppRoutes() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
+
+            <Route path="/character/:characterId/profile" element={<CharacterProfile />} />
 
             <Route path="*" element={<NotFound404 />} />
         </Routes>

@@ -720,9 +720,71 @@ main {
 }
 
 #svg {
-  width: 21px;
-  height: auto;
   fill: var(--fill);
+}
+
+.profile-icons {
+  display: inline-grid;
+  grid-template-columns: 36px 36px 36px;
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 15px;
+}
+
+.profile-icons .profile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  border-radius: 3px;
+  width: 36px;
+  height: 35px;
+  box-shadow: 0 0 3px 1px var(--shadow-0d);
+  background: var(--secondary-blue);
+}
+
+.profile-icons .profile-btn:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+  transition: all .15s ease;
+}
+
+.profile-icons .messages-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  border-radius: 3px;
+  width: 36px;
+  height: 35px;
+  box-shadow: 0 0 3px 1px var(--shadow-0d);
+  background: var(--primary-orange);
+}
+
+.profile-icons .messages-btn:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+  transition: all .15s ease;
+}
+
+.profile-icons .characters-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  border-radius: 3px;
+  width: 36px;
+  height: 35px;
+  box-shadow: 0 0 3px 1px var(--shadow-0d);
+  background: var(--primary-orange);
+}
+
+.profile-icons .characters-btn:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+  transition: all .15s ease;
 }
 
 .auth-container {
@@ -741,6 +803,8 @@ main {
   justify-content: center;
   padding: 7px;
   border-radius: 3px;
+  width: 36px;
+  height: 35px;
   box-shadow: 0 0 3px 1px var(--shadow-0d);
   background: var(--secondary-blue);
 }
@@ -757,6 +821,8 @@ main {
   justify-content: center;
   padding: 7px;
   border-radius: 3px;
+  width: 36px;
+  height: 35px;
   box-shadow: 0 0 3px 1px var(--shadow-0d);
   background: var(--primary-orange);
 }
