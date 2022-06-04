@@ -47,7 +47,7 @@ class MenuContainer extends Component {
 
     ranklistR() {
         let height = document.getElementById("ranklist-menu-container");
-        let half = (height.offsetHeight / 2) + 22;
+        let half = (height.offsetHeight / 2) + 21;
         let container = document.getElementById("ranklist-menu-container");
         container.style.marginTop = -half+"px";
     }
