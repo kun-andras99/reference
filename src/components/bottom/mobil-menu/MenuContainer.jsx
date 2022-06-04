@@ -40,7 +40,7 @@ class MenuContainer extends Component {
 
     weaponR() {
         let height = document.getElementById("weapon-menu-container");
-        let half = (height.offsetHeight / 2) + 4;
+        let half = (height.offsetHeight / 2) + 6;
         let container = document.getElementById("weapon-menu-container");
         container.style.marginTop = -half+"px";
     }
