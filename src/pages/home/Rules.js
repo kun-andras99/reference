@@ -7,7 +7,7 @@ import Text from "../../components/access/Text";
 function Rules() {
     return (
         <Container>
-            <Heading>Szabályok</Heading>
+            <Heading tag="1">Szabályok</Heading>
             <Text>...</Text>
             <Section cls="mode-content">
                 ...

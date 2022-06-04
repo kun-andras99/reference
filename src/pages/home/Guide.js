@@ -7,7 +7,7 @@ import Text from "../../components/access/Text";
 function Guide() {
     return (
         <Container>
-            <Heading>Útmutató</Heading>
+            <Heading tag="1">Útmutató</Heading>
             <Text>...</Text>
             <Section cls="mode-content">
                 ...

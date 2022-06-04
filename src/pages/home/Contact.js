@@ -7,7 +7,7 @@ import Text from "../../components/access/Text";
 function Contact() {
     return (
         <Container>
-            <Heading>Kapcsolat</Heading>
+            <Heading tag="1">Kapcsolat</Heading>
             <Text>...</Text>
             <Section cls="mode-content">
                 ...

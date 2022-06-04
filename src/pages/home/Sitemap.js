@@ -7,7 +7,7 @@ import Text from "../../components/access/Text";
 function Sitemap() {
     return (
         <Container>
-            <Heading>Oldaltérkép</Heading>
+            <Heading tag="1">Oldaltérkép</Heading>
             <Text>...</Text>
             <Section cls="mode-content">
                 ...

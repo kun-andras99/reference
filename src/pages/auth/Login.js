@@ -9,9 +9,9 @@ import Button from "../../components/access/Button";
 function Login() {
     return (
         <Container>
-            <Heading>Bejelentkezés</Heading>
+            <Heading tag="1">Bejelentkezés</Heading>
             <Section cls="mode-content">
-                <Button name="o">Belépés</Button>
+                ...
             </Section>
             <Text>Nincs még fiókod? <Link to="/register">Hozz létre! </Link></Text>
             <Text><Link to="/forgot-password">Elfelejtett jelszó</Link></Text>

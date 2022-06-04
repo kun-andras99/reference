@@ -7,7 +7,7 @@ import Text from "../../components/access/Text";
 function ForgotPassword() {
     return (
         <Container>
-            <Heading>Elfelejtett jelszó</Heading>
+            <Heading tag="1">Elfelejtett jelszó</Heading>
             <Text>...</Text>
             <Section cls="mode-content">
                 ...

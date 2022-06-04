@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 50%;
     right: 50%;
-    transform: translateX(calc(-50% + 530px)) translateY(calc(-50% - 169px));
+    transform: translateX(calc(-50% + 560px)) translateY(calc(-50% - 169px));
 
     .mobile-menu {
         position: relative;
@@ -178,11 +178,11 @@
     }
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1175px) {
     .mobile-menu-fix {
         position: fixed;
         bottom: 78px;
-        right: 35px;
+        right: 30px;
         transform: none;
     
         .mobile-menu {

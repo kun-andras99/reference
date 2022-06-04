@@ -8,7 +8,7 @@ import Text from "../../components/access/Text";
 function Register() {
     return (
         <Container>
-            <Heading>Regisztráció</Heading>
+            <Heading tag="1">Regisztráció</Heading>
             <Section cls="mode-content">
                 ...
             </Section>

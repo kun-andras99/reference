@@ -116,7 +116,7 @@ body {
   background-color: var(--site-bg);
   font-family: 'Artegra Soft', sans-serif;
   font-weight: 500;
-  font-size: .930rem;
+  font-size: .915rem;
   color: #fff;
 }
 
@@ -128,7 +128,7 @@ body.dark-mode .toggle-mode {
   font-weight: 800;
   bottom: 50%;
   right: 50%;
-  transform: translateX(calc(-50% + 537px)) translateY(calc(-50% + 235px));
+  transform: translateX(calc(-50% + 567px)) translateY(calc(-50% + 235px));
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -143,7 +143,7 @@ body.light-mode .toggle-mode {
   font-weight: 800;
   bottom: 50%;
   right: 50%;
-  transform: translateX(calc(-50% + 537px)) translateY(calc(-50% + 238px));
+  transform: translateX(calc(-50% + 567px)) translateY(calc(-50% + 238px));
   height: 32px;
   border-radius: 50%;
   background-color: var(--dark-31);
@@ -180,9 +180,9 @@ ul, li {
   display: none;
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1175px) {
   body {
-    font-size: .900rem;
+    font-size: .895rem;
   }
   body.dark-mode .toggle-mode {
     position: fixed;
@@ -191,7 +191,7 @@ ul, li {
     justify-content: center;
     font-weight: 800;
     bottom: 25px;
-    right: 43px;
+    right: 38px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -205,7 +205,7 @@ ul, li {
     justify-content: center;
     font-weight: 800;
     bottom: 25px;
-    right: 43px;
+    right: 38px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -296,7 +296,7 @@ main {
   position: fixed;
   bottom: 50%;
   right: 50%;
-  transform: translateX(calc(-50% + 530px)) translateY(calc(-50% - 169px));
+  transform: translateX(calc(-50% + 560px)) translateY(calc(-50% - 169px));
 }
 
 .mobile-menu-fix .mobile-menu {
@@ -470,11 +470,11 @@ main {
   display: none;
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1175px) {
   .mobile-menu-fix {
     position: fixed;
     bottom: 78px;
-    right: 35px;
+    right: 30px;
     transform: none;
   }
   .mobile-menu-fix .mobile-menu {
@@ -687,10 +687,22 @@ main {
 
 .img-character-profile {
   position: fixed;
-  bottom: 25px;
-  left: 30px;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(calc(-50% - 546px)) translateY(calc(-50% + 90px));
   border-radius: 5px;
   box-shadow: 0 0 3px 1px var(--shadow-0d);
+}
+
+@media (max-width: 1175px) {
+  .img-character-profile {
+    position: fixed;
+    bottom: 25px;
+    left: 30px;
+    transform: none;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px var(--shadow-0d);
+  }
 }
 
 .sun-svg {
