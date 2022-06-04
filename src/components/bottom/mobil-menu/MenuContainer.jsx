@@ -7,29 +7,25 @@ class MenuContainer extends Component {
     }
 
     homeR() {
-        let height = document.getElementById("home-menu-container");
-        let half = (height.offsetHeight / 2) - 20;
         let container = document.getElementById("home-menu-container");
-        container.style.marginTop = -half+"px";
+        container.style.marginTop = "-7px";
     }
 
     missionR() {
-        let height = document.getElementById("mission-menu-container");
-        let half = (height.offsetHeight / 2) - 20;
         let container = document.getElementById("mission-menu-container");
-        container.style.marginTop = -half+"px";
+        container.style.marginTop = "-3.44rem";
     }
 
     hokageR() {
         let height = document.getElementById("hokage-menu-container");
-        let half = (height.offsetHeight / 2) - 20;
+        let half = (height.offsetHeight / 2) - 21;
         let container = document.getElementById("hokage-menu-container");
         container.style.marginTop = -half+"px";
     }
 
     cityR() {
         let height = document.getElementById("city-menu-container");
-        let half = (height.offsetHeight / 2) - 17;
+        let half = (height.offsetHeight / 2) - 21;
         console.log(half);
         let container = document.getElementById("city-menu-container");
         container.style.marginTop = -half+"px";
@@ -37,21 +33,21 @@ class MenuContainer extends Component {
 
     jutsuR() {
         let height = document.getElementById("jutsu-menu-container");
-        let half = (height.offsetHeight / 2) - 20;
+        let half = (height.offsetHeight / 2) - 21;
         let container = document.getElementById("jutsu-menu-container");
         container.style.marginTop = -half+"px";
     }
 
     weaponR() {
         let height = document.getElementById("weapon-menu-container");
-        let half = (height.offsetHeight / 2) - 20;
+        let half = (height.offsetHeight / 2) + 4;
         let container = document.getElementById("weapon-menu-container");
         container.style.marginTop = -half+"px";
     }
 
     ranklistR() {
         let height = document.getElementById("ranklist-menu-container");
-        let half = (height.offsetHeight / 2) - 20;
+        let half = (height.offsetHeight / 2) + 22;
         let container = document.getElementById("ranklist-menu-container");
         container.style.marginTop = -half+"px";
     }
