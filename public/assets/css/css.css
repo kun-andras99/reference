@@ -844,3 +844,7 @@ main {
   display: inline-grid;
   grid-template-columns: 40% 45% 15%;
 }
+
+footer {
+  margin-bottom: 150px;
+}
