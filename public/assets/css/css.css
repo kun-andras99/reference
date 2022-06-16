@@ -314,6 +314,10 @@ main {
   padding: 0px;
 }
 
+.mode-content p:not(:last-child) {
+  margin-block-end: 10px;
+}
+
 @media (max-width: 700px) {
   main {
     margin: 0 auto;
