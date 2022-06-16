@@ -4,6 +4,7 @@ import Heading from "../../components/access/Heading";
 import Section from "../../components/access/Section";
 import Text from "../../components/access/Text";
 
+
 function Home() {
     return (
         <Container>

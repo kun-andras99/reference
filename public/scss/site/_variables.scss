@@ -2,8 +2,35 @@
     --primary-blue: #058df3;
     --secondary-blue: #3F51B5;
     --primary-orange: #FF5722;
+    --primary-gray: #747474;
+    --primary-green: #36811b;
+    --primary-red: #c21b1b;
 
     --fill: #dbdbdb;
+
+
+
+    /*  body  */
+    --site-bg: #121212;
+    --header-bg: #080808;
+    --main-bg: transparent;
+    --main-color: #8e8e8e;
+
+    --mode-content-bg: #222222;
+    --mode-content-color: #c6c6c6;
+
+    --dark-35: #353535;
+    --dark-31: #313131;
+    --dark-29: #292929;
+    --dark-0c: #0c0c0c;
+
+    --shadow-0d: #0d0d0d;
+    --shadow-0c9: #0c0c0cd9;
+
+    --filter-b1: brightness(70%);
+    --filter-b2: brightness(130%);
+    
+    --fill-toggle: #c9c9c9;
 }
 
 body.dark-mode {

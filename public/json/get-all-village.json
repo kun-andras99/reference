@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"village_name": "Konohagakure",
+		"points": 0
+	},
+	{
+		"id": 2,
+		"village_name": "Sunagakure",
+		"points": 0
+	},
+	{
+		"id": 3,
+		"village_name": "Iwagakure",
+		"points": 0
+	},
+	{
+		"id": 4,
+		"village_name": "Takigakure",
+		"points": 0
+	},
+	{
+		"id": 5,
+		"village_name": "Kumogakure",
+		"points": 0
+	},
+	{
+		"id": 6,
+		"village_name": "Akatsuki",
+		"points": 0
+	}
+]

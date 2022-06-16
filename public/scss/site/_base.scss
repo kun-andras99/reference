@@ -86,6 +86,21 @@ body {
     color: #fff;
 }
 
+.toggle-mode {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    bottom: 50%;
+    right: 50%;
+    transform: translateX(calc(-50% + 567px))  translateY(calc(-50% + 235px));
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--dark-31);
+}
+
 body.dark-mode {
     .toggle-mode {
         position: fixed;

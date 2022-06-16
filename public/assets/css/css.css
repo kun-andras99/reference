@@ -1,8 +1,28 @@
+@charset "UTF-8";
 :root {
   --primary-blue: #058df3;
   --secondary-blue: #3F51B5;
   --primary-orange: #FF5722;
+  --primary-gray: #747474;
+  --primary-green: #36811b;
+  --primary-red: #c21b1b;
   --fill: #dbdbdb;
+  /*  body  */
+  --site-bg: #121212;
+  --header-bg: #080808;
+  --main-bg: transparent;
+  --main-color: #8e8e8e;
+  --mode-content-bg: #222222;
+  --mode-content-color: #c6c6c6;
+  --dark-35: #353535;
+  --dark-31: #313131;
+  --dark-29: #292929;
+  --dark-0c: #0c0c0c;
+  --shadow-0d: #0d0d0d;
+  --shadow-0c9: #0c0c0cd9;
+  --filter-b1: brightness(70%);
+  --filter-b2: brightness(130%);
+  --fill-toggle: #c9c9c9;
 }
 
 body.dark-mode {
@@ -118,6 +138,21 @@ body {
   font-weight: 500;
   font-size: .915rem;
   color: #fff;
+}
+
+.toggle-mode {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  bottom: 50%;
+  right: 50%;
+  transform: translateX(calc(-50% + 567px)) translateY(calc(-50% + 235px));
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--dark-31);
 }
 
 body.dark-mode .toggle-mode {
@@ -382,38 +417,46 @@ main {
   transform: translateY(-109px);
 }
 
+.mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item:hover > .home-menu-container,
+.mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item .home-menu-container {
+  position: absolute;
+  min-width: 130px;
+}
+
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item:hover > .mission-menu-container,
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item .mission-menu-container {
   position: absolute;
+  min-width: 190px;
 }
 
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item:hover > .hokage-menu-container,
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item .hokage-menu-container {
   position: absolute;
-  min-width: 230px;
+  min-width: 145px;
 }
 
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item:hover > .city-menu-container,
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item .city-menu-container {
   position: absolute;
-  min-width: 200px;
+  min-width: 185px;
 }
 
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item:hover > .jutsu-menu-container,
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item .jutsu-menu-container {
   position: absolute;
-  min-width: 230px;
+  min-width: 245px;
 }
 
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item:hover > .weapon-menu-container,
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item .weapon-menu-container {
   position: absolute;
-  min-width: 200px;
+  min-width: 218px;
 }
 
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item:hover > .ranklist-menu-container,
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item .ranklist-menu-container {
   position: absolute;
+  min-width: 125px;
 }
 
 .mobile-menu-fix .mobile-menu .mobile-menu-items .mobile-menu-item:hover > ul {
@@ -561,33 +604,40 @@ main {
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item ul > li :last-child() {
     transform: translateY(-109px);
   }
+  .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item:hover > .home-menu-container,
+  .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item .home-menu-container {
+    position: absolute;
+    min-width: 130px;
+  }
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item:hover > .mission-menu-container,
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item .mission-menu-container {
     position: absolute;
+    min-width: 190px;
   }
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item:hover > .hokage-menu-container,
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item .hokage-menu-container {
     position: absolute;
-    min-width: 230px;
+    min-width: 145px;
   }
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item:hover > .city-menu-container,
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item .city-menu-container {
     position: absolute;
-    min-width: 200px;
+    min-width: 185px;
   }
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item:hover > .jutsu-menu-container,
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item .jutsu-menu-container {
     position: absolute;
-    min-width: 230px;
+    min-width: 245px;
   }
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item:hover > .weapon-menu-container,
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item .weapon-menu-container {
     position: absolute;
-    min-width: 200px;
+    min-width: 218px;
   }
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item:hover > .ranklist-menu-container,
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item .ranklist-menu-container {
     position: absolute;
+    min-width: 125px;
   }
   .mobile-menu-fix .mobile-menu .mobile-menu-items-open .mobile-menu-item:hover > ul {
     right: 38px;
@@ -694,35 +744,29 @@ main {
   box-shadow: 0 0 3px 1px var(--shadow-0d);
 }
 
-@media (max-width: 1175px) {
-  .img-character-profile {
-    position: fixed;
-    bottom: 25px;
-    left: 30px;
-    transform: none;
-    border-radius: 5px;
-    box-shadow: 0 0 3px 1px var(--shadow-0d);
-  }
-}
-
 .sun-svg {
-  width: 28px;
   height: auto;
   padding: 5px;
   fill: var(--fill-toggle);
+  width: 28px;
 }
 
 .moon-svg {
-  width: 32px;
   height: auto;
   padding: 5px;
   fill: var(--fill-toggle);
+  width: 32px;
 }
 
 #svg {
   fill: var(--fill);
 }
 
+/**
+*
+*   ALSÓ GOMBOK
+*
+*/
 .profile-icons {
   display: inline-grid;
   grid-template-columns: 36px 36px 36px;
@@ -742,7 +786,7 @@ main {
   width: 36px;
   height: 35px;
   box-shadow: 0 0 3px 1px var(--shadow-0d);
-  background: var(--secondary-blue);
+  background: var(--primary-red);
 }
 
 .profile-icons .profile-btn:hover {
@@ -760,7 +804,7 @@ main {
   width: 36px;
   height: 35px;
   box-shadow: 0 0 3px 1px var(--shadow-0d);
-  background: var(--primary-orange);
+  background: var(--primary-gray);
 }
 
 .profile-icons .messages-btn:hover {
@@ -778,7 +822,7 @@ main {
   width: 36px;
   height: 35px;
   box-shadow: 0 0 3px 1px var(--shadow-0d);
-  background: var(--primary-orange);
+  background: var(--primary-green);
 }
 
 .profile-icons .characters-btn:hover {
@@ -836,6 +880,17 @@ main {
 .toggle-mode {
   cursor: pointer;
   box-shadow: 0 0 3px 1px var(--shadow-0d);
+}
+
+@media (max-width: 1175px) {
+  .img-character-profile {
+    position: fixed;
+    bottom: 25px;
+    left: 30px;
+    transform: none;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px var(--shadow-0d);
+  }
 }
 
 .oneclan {

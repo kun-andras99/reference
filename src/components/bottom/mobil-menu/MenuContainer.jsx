@@ -11,15 +11,15 @@ class MenuContainer extends Component {
         container.style.marginTop = "-7px";
     }
 
-    missionR() {
-        let container = document.getElementById("mission-menu-container");
+    hokageR() {
+        let container = document.getElementById("hokage-menu-container");
         container.style.marginTop = "-3.44rem";
     }
 
-    hokageR() {
-        let height = document.getElementById("hokage-menu-container");
+    missionR() {
+        let height = document.getElementById("mission-menu-container");
         let half = (height.offsetHeight / 2) - 21;
-        let container = document.getElementById("hokage-menu-container");
+        let container = document.getElementById("mission-menu-container");
         container.style.marginTop = -half+"px";
     }
 

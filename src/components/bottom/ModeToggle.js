@@ -24,17 +24,15 @@ class ModeToggle extends Component {
     }
 
     theme = async () => {
-        if (!localStorage.getItem('theme')) {
-            document.body.classList.add('light-mode');
-            localStorage.setItem('theme', 'light-mode');
-        }
-        
         if (localStorage.getItem('theme') === 'light-mode') {
-            document.body.classList.remove('dark-mode');
             document.body.classList.add('light-mode');
+            document.body.classList.remove('dark-mode');
         } else if (localStorage.getItem('theme') === 'dark-mode') {
             document.body.classList.remove('light-mode');
             document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('light-mode');
+            document.body.classList.remove('dark-mode');
         }
     }
 

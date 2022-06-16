@@ -85,39 +85,54 @@
                     }
                 }
 
-                &:hover > .mission-menu-container,
-                .mission-menu-container {
-                    position: absolute;
-                }
-
-                &:hover > .hokage-menu-container,
-                .hokage-menu-container {
-                    position: absolute;
-                    min-width: 230px;
-                }
-
-                &:hover > .city-menu-container,
-                .city-menu-container {
-                    position: absolute;
-                    min-width: 200px;
-                }
-
-                &:hover > .jutsu-menu-container,
-                .jutsu-menu-container {
-                    position: absolute;
-                    min-width: 230px;
-                }
-
-                &:hover > .weapon-menu-container,
-                .weapon-menu-container {
-                    position: absolute;
-                    min-width: 200px;
-                }
-
-                &:hover > .ranklist-menu-container,
-                .ranklist-menu-container {
-                    position: absolute;
-                }
+                &:hover > .home-menu-container,
+                    .home-menu-container {
+                        position: absolute;
+                        min-width: 130px;
+                        // top: -48px;
+                    }
+    
+                    &:hover > .mission-menu-container,
+                    .mission-menu-container {
+                        position: absolute;
+                        min-width: 190px;
+                        // top: -48px;
+                    }
+    
+                    &:hover > .hokage-menu-container,
+                    .hokage-menu-container {
+                        position: absolute;
+                        min-width: 145px;
+                        // top: -3.6875rem;
+                    }
+    
+                    &:hover > .city-menu-container,
+                    .city-menu-container {
+                        position: absolute;
+                        min-width: 185px;
+                        // top: -82px;
+                    }
+    
+                    &:hover > .jutsu-menu-container,
+                    .jutsu-menu-container {
+                        position: absolute;
+                        // top: -4.1240rem;
+                        min-width: 245px;
+                    }
+    
+                    &:hover > .weapon-menu-container,
+                    .weapon-menu-container {
+                        position: absolute;
+                        // top: -3.80449rem;
+                        min-width: 218px;
+                    }
+    
+                    &:hover > .ranklist-menu-container,
+                    .ranklist-menu-container {
+                        position: absolute;
+                        min-width: 125px;
+                        // top: -79px;
+                    }
     
                 &:hover > ul {
                     right: 38px;
@@ -280,24 +295,32 @@
                             }
                         }
                     }
+
+                    &:hover > .home-menu-container,
+                    .home-menu-container {
+                        position: absolute;
+                        min-width: 130px;
+                        // top: -48px;
+                    }
     
                     &:hover > .mission-menu-container,
                     .mission-menu-container {
                         position: absolute;
+                        min-width: 190px;
                         // top: -48px;
                     }
     
                     &:hover > .hokage-menu-container,
                     .hokage-menu-container {
                         position: absolute;
-                        min-width: 230px;
+                        min-width: 145px;
                         // top: -3.6875rem;
                     }
     
                     &:hover > .city-menu-container,
                     .city-menu-container {
                         position: absolute;
-                        min-width: 200px;
+                        min-width: 185px;
                         // top: -82px;
                     }
     
@@ -305,19 +328,20 @@
                     .jutsu-menu-container {
                         position: absolute;
                         // top: -4.1240rem;
-                        min-width: 230px;
+                        min-width: 245px;
                     }
     
                     &:hover > .weapon-menu-container,
                     .weapon-menu-container {
                         position: absolute;
                         // top: -3.80449rem;
-                        min-width: 200px;
+                        min-width: 218px;
                     }
     
                     &:hover > .ranklist-menu-container,
                     .ranklist-menu-container {
                         position: absolute;
+                        min-width: 125px;
                         // top: -79px;
                     }
         

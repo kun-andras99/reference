@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"user_id": 2,
+		"tblcharacter_id": 8,
+		"tblvillage_id": 1,
+		"tblrang_id": 1,
+		"tblpont_id": 6
+	},
+	{
+		"id": 2,
+		"user_id": 5,
+		"tblcharacter_id": 2,
+		"tblvillage_id": 4,
+		"tblrang_id": 3,
+		"tblpont_id": 8
+	},
+	{
+		"id": 3,
+		"user_id": 1,
+		"tblcharacter_id": 3,
+		"tblvillage_id": 1,
+		"tblrang_id": 2,
+		"tblpont_id": 10
+	}
+]

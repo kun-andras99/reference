@@ -1,37 +1,52 @@
 .img-character-profile {
-        position: fixed;
-        bottom: 50%;
-        left: 50%;
-        transform: translateX(calc(-50% - 546px)) translateY(calc(-50% + 90px));
-        border-radius: 5px;
-        box-shadow: 0 0 3px 1px var(--shadow-0d);
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(calc(-50% - 546px)) translateY(calc(-50% + 90px));
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px var(--shadow-0d);
 }
-@media (max-width: 1175px) {
-    .img-character-profile {
-        position: fixed;
-        bottom: 25px;
-        left: 30px;
-        transform: none;
-        border-radius: 5px;
-        box-shadow: 0 0 3px 1px var(--shadow-0d);
-    }
-}
-.sun-svg {
-    width: 28px;
+
+@mixin bottom-svg {
     height: auto;
     padding: 5px;
     fill: var(--fill-toggle);
 }
 
+.sun-svg {
+    @include bottom-svg;
+    width: 28px;
+}
+
 .moon-svg {
+    @include bottom-svg;
     width: 32px;
-    height: auto;
-    padding: 5px;
-    fill: var(--fill-toggle);
 }
 
 #svg {
     fill: var(--fill);
+}
+
+/**
+*
+*   ALSÓ GOMBOK
+*
+*/
+@mixin auth-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 3px;
+    width: 36px;
+    height: 35px;
+    box-shadow: 0 0 3px 1px var(--shadow-0d);
+}
+
+@mixin auth-button-hover {
+    cursor: pointer;
+    filter: brightness(80%);
+    transition: all .15s ease;
 }
 
 .profile-icons {
@@ -42,53 +57,28 @@
     left: 50%;
     transform: translateX(-50%);
     gap: 15px;
+
     .profile-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 7px;
-        border-radius: 3px;
-        width: 36px;
-        height: 35px;
-        box-shadow: 0 0 3px 1px var(--shadow-0d);
-        background: var(--secondary-blue);
+        @include auth-buttons;
+        background: var(--primary-red);
         &:hover {
-            cursor: pointer;
-            filter: brightness(80%);
-            transition: all .15s ease;
+            @include auth-button-hover;
         }
     }
-    
+
     .messages-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 7px;
-        border-radius: 3px;
-        width: 36px;
-        height: 35px;
-        box-shadow: 0 0 3px 1px var(--shadow-0d);
-        background: var(--primary-orange);
+        @include auth-buttons;
+        background: var(--primary-gray);
         &:hover {
-            cursor: pointer;
-            filter: brightness(80%);
-            transition: all .15s ease;
+            @include auth-button-hover;
         }
     }
+
     .characters-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 7px;
-        border-radius: 3px;
-        width: 36px;
-        height: 35px;
-        box-shadow: 0 0 3px 1px var(--shadow-0d);
-        background: var(--primary-orange);
+        @include auth-buttons;
+        background: var(--primary-green);
         &:hover {
-            cursor: pointer;
-            filter: brightness(80%);
-            transition: all .15s ease;
+            @include auth-button-hover;
         }
     }
 }
@@ -103,36 +93,18 @@
     gap: 15px;
 
     .login-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 7px;
-        border-radius: 3px;
-        width: 36px;
-        height: 35px;
-        box-shadow: 0 0 3px 1px var(--shadow-0d);
+        @include auth-buttons;
         background: var(--secondary-blue);
         &:hover {
-            cursor: pointer;
-            filter: brightness(80%);
-            transition: all .15s ease;
+            @include auth-button-hover;
         }
     }
-    
+
     .register-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 7px;
-        border-radius: 3px;
-        width: 36px;
-        height: 35px;
-        box-shadow: 0 0 3px 1px var(--shadow-0d);
+        @include auth-buttons;
         background: var(--primary-orange);
         &:hover {
-            cursor: pointer;
-            filter: brightness(80%);
-            transition: all .15s ease;
+            @include auth-button-hover;
         }
     }
 }
@@ -142,3 +114,13 @@
     box-shadow: 0 0 3px 1px var(--shadow-0d);
 }
 
+@media (max-width: 1175px) {
+    .img-character-profile {
+        position: fixed;
+        bottom: 25px;
+        left: 30px;
+        transform: none;
+        border-radius: 5px;
+        box-shadow: 0 0 3px 1px var(--shadow-0d);
+    }
+}
