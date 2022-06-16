@@ -81,7 +81,7 @@ body {
     height: calc(100% - 16px);
     background-color: var(--site-bg);
     font-family: 'Artegra Soft', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: .915rem;
     color: #fff;
 }
@@ -166,7 +166,7 @@ ul, li {
 
 @media (max-width: 1175px) {
     body {
-        font-size: .895rem;
+        font-size: .906rem;
     }
     body.dark-mode {
         .toggle-mode {
