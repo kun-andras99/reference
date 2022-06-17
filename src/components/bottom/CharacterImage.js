@@ -4,7 +4,7 @@ import { BASE_URL } from "../../constans/constans";
 
 function CharacterImage() {
     return (
-        <Link to="/character/3/profile"><img className='img-character-profile' src={ BASE_URL + `/assets/images/characters/3-s.png`} alt="t" title="t" /></Link>
+        <Link to="/character/3/profile"><img className='img-character-profile' src={ BASE_URL + `/assets/images/characters/3-select.png`} alt="t" title="t" /></Link>
     )
 }
 

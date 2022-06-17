@@ -8,7 +8,7 @@ import ModeToggle from '../bottom/ModeToggle';
 import Footer from '../site/Footer';
 
 function Layout(props) {
-    let num = true;
+    let num = false;
     return (
         <>
             {/* <Header /> */}

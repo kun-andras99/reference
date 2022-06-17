@@ -4,7 +4,7 @@
     left: 50%;
     transform: translateX(calc(-50% - 546px)) translateY(calc(-50% + 90px));
     border-radius: 5px;
-    box-shadow: 0 0 3px 1px var(--shadow-0d);
+    filter: drop-shadow(0 0 3px var(--shadow-0d)) drop-shadow(0 0 3px var(--shadow-0d)) drop-shadow(0 0 3px var(--shadow-0d));
 }
 
 @mixin bottom-svg {
@@ -121,6 +121,6 @@
         left: 30px;
         transform: none;
         border-radius: 5px;
-        box-shadow: 0 0 3px 1px var(--shadow-0d);
+        filter: drop-shadow(0 0 3px var(--shadow-0d)) drop-shadow(0 0 3px var(--shadow-0d)) drop-shadow(0 0 3px var(--shadow-0d));
     }
 }
