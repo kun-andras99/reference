@@ -1,18 +1,20 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Container from "../../components/access/Container";
 import Heading from "../../components/access/Heading";
 import Section from "../../components/access/Section";
-import { jsonRoute } from "../../http-common";
+import { DEV_URL } from "../../constans/constans";
 
 function CharactersRanklist() {
     const [characters, setCharacters] = useState([])
     useEffect(() => {
       return () => {
-        jsonRoute.get('/get-all-character.json')
+        axios.get(DEV_URL + '/get-all-character.json')
             .then((response) => setCharacters(response.data))
             .catch(err => console.log(err));
       }
     }, [])
+    console.log(characters);
     return (
         <Container>
             <Heading tag="1">Karakterek listája</Heading>
