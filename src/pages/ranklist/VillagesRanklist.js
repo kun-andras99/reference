@@ -13,6 +13,7 @@ function VillagesRanklist() {
             .catch(err => console.log(err));
       }
     }, [])
+    console.log(villages);
     return (
         <Container>
             <Heading tag="1">Lakhelyek listája</Heading>
