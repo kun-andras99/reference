@@ -13,7 +13,7 @@ function CharactersRanklist() {
             .then((response) => setCharacters(response.data))
             .catch(err => console.log(err));
       }
-    }, [characters])
+    }, [])
     console.log(characters);
     return (
         <Container>
