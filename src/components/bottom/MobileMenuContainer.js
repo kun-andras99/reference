@@ -75,7 +75,7 @@ function MobileMenuContainer() {
                         <MenuLink url="/remote-equipments" hide={hide}>Távolharci felszerelések</MenuLink>
                         <MenuLink url="/puppets" hide={hide}>Bábok</MenuLink>
                         <MenuLink url="/seven-swords" hide={hide}>A Köd Hét Kardja</MenuLink>
-                        <MenuLink url="/legendary-weapons" hide={hide}>Legendás felszerelések</MenuLink>
+                        <MenuLink url="/legendary-equipments" hide={hide}>Legendás felszerelések</MenuLink>
                         <MenuLink url="/unique-equipments" hide={hide}>Egyedi felszerelések</MenuLink>
                     </MenuContainer>
                 </MenuItem>
