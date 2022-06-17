@@ -3,12 +3,13 @@ import React, { useEffect, useState } from "react";
 import Container from "../../components/access/Container";
 import Heading from "../../components/access/Heading";
 import Section from "../../components/access/Section";
+import { DEV_URL } from "../../constans/constans";
 
 function VillagesRanklist() {
     const [villages, setVillages] = useState([])
     useEffect(() => {
       return () => {
-        axios.get('/json/get-all-village.json')
+        axios.get(DEV_URL + '/get-all-village.json')
             .then((response) => setVillages(response.data))
             .catch(err => console.log(err));
       }
